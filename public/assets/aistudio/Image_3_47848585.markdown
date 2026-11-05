@@ -1,0 +1,218 @@
+---
+name: Tactical SDR Console
+colors:
+  surface: '#0e141c'
+  surface-dim: '#0e141c'
+  surface-bright: '#343a42'
+  surface-container-lowest: '#090f16'
+  surface-container-low: '#161c24'
+  surface-container: '#1a2028'
+  surface-container-high: '#242a33'
+  surface-container-highest: '#2f353e'
+  on-surface: '#dde3ee'
+  on-surface-variant: '#bbcabf'
+  inverse-surface: '#dde3ee'
+  inverse-on-surface: '#2b3139'
+  outline: '#86948a'
+  outline-variant: '#3c4a42'
+  surface-tint: '#4edea3'
+  primary: '#4edea3'
+  on-primary: '#003824'
+  primary-container: '#10b981'
+  on-primary-container: '#00422b'
+  inverse-primary: '#006c49'
+  secondary: '#4cd7f6'
+  on-secondary: '#003640'
+  secondary-container: '#03b5d3'
+  on-secondary-container: '#00424e'
+  tertiary: '#ffb95f'
+  on-tertiary: '#472a00'
+  tertiary-container: '#e29100'
+  on-tertiary-container: '#523200'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#6ffbbe'
+  primary-fixed-dim: '#4edea3'
+  on-primary-fixed: '#002113'
+  on-primary-fixed-variant: '#005236'
+  secondary-fixed: '#acedff'
+  secondary-fixed-dim: '#4cd7f6'
+  on-secondary-fixed: '#001f26'
+  on-secondary-fixed-variant: '#004e5c'
+  tertiary-fixed: '#ffddb8'
+  tertiary-fixed-dim: '#ffb95f'
+  on-tertiary-fixed: '#2a1700'
+  on-tertiary-fixed-variant: '#653e00'
+  background: '#0e141c'
+  on-background: '#dde3ee'
+  surface-variant: '#2f353e'
+typography:
+  headline-xl:
+    fontFamily: Space Mono
+    fontSize: 48px
+    fontWeight: '700'
+    lineHeight: 52px
+    letterSpacing: -0.02em
+  headline-xl-mobile:
+    fontFamily: Space Mono
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 38px
+    letterSpacing: -0.01em
+  headline-lg:
+    fontFamily: Space Mono
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 34px
+    letterSpacing: 0em
+  headline-lg-mobile:
+    fontFamily: Space Mono
+    fontSize: 22px
+    fontWeight: '700'
+    lineHeight: 28px
+    letterSpacing: 0em
+  headline-md:
+    fontFamily: Geist
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 26px
+    letterSpacing: 0em
+  body-lg:
+    fontFamily: Geist
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+    letterSpacing: 0em
+  body-md:
+    fontFamily: Geist
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+    letterSpacing: 0em
+  data-mono-lg:
+    fontFamily: Space Mono
+    fontSize: 18px
+    fontWeight: '700'
+    lineHeight: 22px
+    letterSpacing: 0.02em
+  data-mono-sm:
+    fontFamily: Space Mono
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+    letterSpacing: 0.05em
+  label-lg:
+    fontFamily: Geist
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.05em
+  label-sm:
+    fontFamily: Geist
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.08em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-lg: 1.5rem
+  margin: 1rem
+  margin-lg: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+The design system embodies a modern, mission-critical tactical radio interface tailored for Software Defined Radio (SDR) operators, field monitors, and radio enthusiasts. The design aesthetic fuses utilitarian precision with ultra-streamlined ergonomics: high-contrast dark surfaces, immediate legibility under extreme lighting conditions, and tactile tap-targets calibrated for rapid field manipulation. 
+
+Drawing from modern avionics, studio-grade audio hardware, and minimalist tactical command software, the system eliminates decorative clutter in favor of crisp spatial hierarchy, high-density data readouts, and unmistakable state signaling. The user experiences zero cognitive drag: frequency acquisition, audio squelch, signal lock, and recording modes are distinguishable at a glance through purposeful phosphor-inspired color accents against absolute void-grade backgrounds.
+
+## Colors
+The color architecture is built strictly for dark-adapted vision and technical distinction:
+
+- **Core Canvas & Containers**:
+  - `Canvas / Abyss`: `#0B0F14` — Deepest base backdrop minimizing screen glare and battery draw on OLED displays.
+  - `Surface Level 1`: `#161C24` — Secondary panels, waterfall trays, and card baselines.
+  - `Surface Level 2`: `#212B36` — Interactive card containers, input enclosures, and inactive hardware buttons.
+  - `Surface Level 3 / Control Rest`: `#2D3846` — Elevated interactive handles, sliders, and borders.
+
+- **Signal Accents & Telemetry**:
+  - `Primary (Emerald Radio)`: `#10B981` — Carrier lock, active tuned frequency, optimal signal-to-noise ratio, and primary system confirmation.
+  - `Secondary (Cyan RF Band)`: `#06B6D4` — RF spectrum telemetry, waterfall heatmaps, bandwidth filters, and auxiliary modulation meters.
+  - `Alert / Voice Det (Amber)`: `#F59E0B` — Squelch gate trigger, VAD (Voice Activity Detection), and caution statuses.
+  - `Critical / Capture (Red)`: `#EF4444` — Active RF raw capture/audio recording (`REC`), emergency frequency flags, and disconnection warnings.
+
+- **Typography & Structural Contrast**:
+  - `Text High-Contrast`: `#F9FAFB` — Primary frequencies and active readouts.
+  - `Text Muted`: `#94A3B8` — Parameter descriptors, units (MHz, kHz, dBm), and idle state indicators.
+  - `Text Disabled / Grid`: `#475569` — Demarcation lines, inactive step markers, and disabled toggles.
+
+## Typography
+The system uses a deliberate two-tier typographic structure:
+1. **Space Mono**: Applied to all mission data, frequency readouts (e.g., `144.800.000 MHz`), signal strength (RSSI in dBm), step rate counters, and time stamps. The monospaced glyph architecture prevents layout jitter when values rapidly fluctuate during sweeping or waterfall parsing.
+2. **Geist**: Employed for structural headings, system states, modes (AM, NFM, WFM, LSB, USB), buttons, and parameter titles. Its neutral geometric skeleton maintains utmost clarity at low sizes against saturated dark backgrounds.
+
+All micro-labels (`label-sm`) use uppercase styling with expanded letter-spacing for instant readability during high-stress operations.
+
+## Layout & Spacing
+The layout adheres to a flexible module system engineered for touch interaction in varying operational environments:
+
+- **Touch Safety & Target Scale**: Touch targets for frequency banks, scan initiation, and squelch overrides adhere to a minimum 48px × 48px surface envelope (often scaled to 56px height on core triggers).
+- **Responsive Adaptations**:
+  - **Mobile (< 768px)**: Single-column vertical stack. The VFO (Variable Frequency Oscillator) readout is pinned top-center, followed by a compact waterfall/spectrum viewport, followed by a 4-column quick-action bottom control bank.
+  - **Tablet (768px – 1024px)**: 2-column layout split 60/40. The left viewport hosts the spectrum analyzer and waterfall; the right column aggregates squelch, step sizes, mode chips, and memories.
+  - **Desktop / Rig Display (> 1024px)**: Full 12-column command layout. Central spectrum module flanked by left-hand hardware tuning knobs/step ladders and right-hand transmission logs, signal decoders, and audio filters.
+
+## Elevation & Depth
+This design avoids blurry, heavy dropshadows that degrade contrast on low-brightness screens. Instead, it creates depth via **Tonal Stratification and Crisp Boundaries**:
+
+- **Layer 0 (Canvas)**: `#0B0F14` flat background.
+- **Layer 1 (Sub-systems & Viewports)**: `#161C24` backed by a 1px perimeter border of `#2D3846` at 60% opacity.
+- **Layer 2 (Interactive Modules)**: `#212B36` surface, highlighted with an active top bevel border (`rgba(255, 255, 255, 0.05)`).
+- **Glow & Transillumination**: Active states (Locked Signal, Squelch Open, Recording) use localized phosphor inner glows (`0 0 12px rgba(16, 185, 129, 0.2)` or `0 0 12px rgba(239, 68, 68, 0.3)`) rather than traditional shadows, evoking physical instrument backlighting.
+
+## Shapes
+A restrained `roundedness: 1` (0.25rem / 4px default) geometry governs all controls, cards, and input clusters, conveying calibrated industrial durability. Key characteristics include:
+
+- Micro-radii on primary buttons and telemetry badges preserve structural grid tension.
+- Status pips and hardware switch notches remain either strictly circular (indicator LEDs) or squared with softened corners to mimic physical tactile switches.
+- Display panels (VFO frequency window, FFT display enclosure) employ sharp interior corners paired with outer 4px container edges.
+
+## Components
+
+- **Frequency Display (VFO Unit)**:
+  - High-impact Space Mono text over `#161C24`. 
+  - Segmented tuning increments: active digit highlighted in `#10B981`, inactive digits in `#F9FAFB`, and dormant padding zeros in `#475569`.
+  - Pinned bandwidth filter visualizer underneath with cyan tint (`#06B6D4`).
+
+- **Hardware Action Buttons**:
+  - Base state: `#212B36` background, 1px solid `#2D3846`, Geist typography in bold tracking. Height 52px for fat-finger operation.
+  - **Active Record (`REC`)**: Shifts to `#EF4444` background with text in `#FFFFFF`, pulsing a 4px circular recording beacon.
+  - **Scan Toggle**: Shifts border to `#06B6D4` with neon-dim backfill (`rgba(6, 182, 212, 0.15)`).
+
+- **Mode Chips (AM, FM, NFM, LSB, USB, CW)**:
+  - Compact segment switchers. Inactive state: ghost frame with `#94A3B8` text.
+  - Selected state: solid `#10B981` border with `#10B981` text and deep emerald underlay tint.
+
+- **Status & Telemetry Badges**:
+  - `CONNECTED / DISCONNECTED`: 8px solid dot. Cyan (`#06B6D4`) when hardware pipeline is synchronized; Red (`#EF4444`) when SDR hardware buffer drops or disconnects.
+  - `VOICE DET (VAD)`: Amber badge (`#F59E0B`) that illuminates instantly upon squelch threshold overrun.
+
+- **Sliders & Dial Controls (Squelch, RF Gain, IF Filter)**:
+  - Linear track in `#161C24` with filled progress in `#06B6D4` or `#10B981`. 
+  - Monospaced readout floating above the thumb indicator displaying exact dB/dBm/kHz levels.
+
+- **Signal Memory & Channel List**:
+  - Dense stacked list rows with high hover/active contrast. Left-hand border strip indicates modulation type (color-coded). Right-hand column reveals stored frequency and live signal strength bars.

@@ -1,0 +1,7 @@
+{
+  "name": "Tactical SDR Console",
+  "description": "Mission-critical Software Defined Radio tactical console with real-time spectrum analyzer, waterfall display, audio demodulation, and signal decoder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
